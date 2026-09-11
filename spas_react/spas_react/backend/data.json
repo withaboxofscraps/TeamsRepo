@@ -1,0 +1,14 @@
+{
+  "students": [
+    {"id": 1, "name": "Rahul Sharma", "department": "CSE", "marks": {"assignments": 18, "internals": 42, "externals": 65}},
+    {"id": 2, "name": "Priya Nair", "department": "CSE", "marks": {"assignments": 20, "internals": 48, "externals": 80}},
+    {"id": 3, "name": "Arjun Kumar", "department": "CSE", "marks": {"assignments": 10, "internals": 22, "externals": 30}},
+    {"id": 4, "name": "Sneha Reddy", "department": "ECE", "marks": {"assignments": 19, "internals": 45, "externals": 70}},
+    {"id": 5, "name": "Vikram Singh", "department": "ECE", "marks": {"assignments": 12, "internals": 25, "externals": 35}},
+    {"id": 6, "name": "Ananya Iyer", "department": "ECE", "marks": {"assignments": 17, "internals": 38, "externals": 55}},
+    {"id": 7, "name": "Karthik Raj", "department": "MECH", "marks": {"assignments": 15, "internals": 30, "externals": 40}},
+    {"id": 8, "name": "Divya Menon", "department": "MECH", "marks": {"assignments": 20, "internals": 50, "externals": 85}},
+    {"id": 9, "name": "Rohan Das", "department": "MECH", "marks": {"assignments": 9, "internals": 18, "externals": 25}},
+    {"id": 10, "name": "Meera Pillai", "department": "CSE", "marks": {"assignments": 16, "internals": 35, "externals": 50}}
+  ]
+}

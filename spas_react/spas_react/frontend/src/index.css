@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #10141c;
+  color: #e8eaf0;
+}
+
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.topbar {
+  padding: 28px 0 20px;
+  border-bottom: 1px solid #262c3a;
+  margin-bottom: 24px;
+}
+
+.topbar h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 8px;
+}
+
+.topbar nav button {
+  background: transparent;
+  border: 1px solid #333c4f;
+  color: #a9b0c0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.topbar nav button.active {
+  background: #2e6cf0;
+  border-color: #2e6cf0;
+  color: white;
+}
+
+.hint {
+  color: #7b8296;
+}
+
+.error {
+  color: #e5484d;
+}
+
+.summary {
+  color: #a9b0c0;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #171c28;
+  border: 1px solid #262c3a;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: #c6cbd8;
+}
+
+/* Bar chart, built with plain divs */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 48px;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar-label {
+  font-size: 13px;
+  color: #a9b0c0;
+}
+
+.bar-track {
+  background: #232a3a;
+  border-radius: 5px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+.bar-value {
+  font-size: 13px;
+  text-align: right;
+  color: #c6cbd8;
+}
+
+.risk-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.risk-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.risk-list li span:first-child {
+  font-weight: 500;
+  flex: 1;
+}
+
+.dept-tag {
+  color: #7b8296;
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+.status-chip {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-chip.large {
+  font-size: 16px;
+  margin: 6px 0 18px;
+}
+
+/* Student list */
+.search {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #333c4f;
+  background: #171c28;
+  color: #e8eaf0;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.student-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #171c28;
+  border: 1px solid #262c3a;
+  border-radius: 8px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.student-row:hover {
+  border-color: #2e6cf0;
+}
+
+/* Detail view */
+.link-button {
+  background: none;
+  border: none;
+  color: #6c9bff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+table td {
+  padding: 8px 0;
+  border-bottom: 1px solid #262c3a;
+  font-size: 14px;
+}
+
+table td:last-child {
+  text-align: right;
+  color: #c6cbd8;
+}
+
+.total-row td {
+  font-weight: 700;
+  border-bottom: none;
+  padding-top: 12px;
+}
+
+button {
+  font-family: inherit;
+}
+
+.card > button,
+.edit-actions button {
+  background: #2e6cf0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.edit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #a9b0c0;
+}
+
+.edit-form input {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #333c4f;
+  background: #10141c;
+  color: #e8eaf0;
+  font-size: 14px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-actions .secondary {
+  background: transparent;
+  border: 1px solid #333c4f;
+  color: #a9b0c0;
+}
